@@ -1,0 +1,390 @@
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+    
+    /*counter*/
+
+.container {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+.count{
+  margin-left: 100%;
+  width: 200px;
+  height: 200px;
+  color: #e9e9e9;
+  background-color: #141d28;
+  background-position: right;
+  text-align: center;
+  padding: 20px;
+  padding-top: 20%;
+  border-radius: 100px;
+  display: inline-block;
+}
+.count:hover{
+  background-color: salmon;
+}
+
+.bg{
+  position: relative;
+  background: url(gambar/bg.png);
+  height: 90vh;
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: animate 15s linear infinite;
+}
+.mobil{
+  position: absolute;
+  bottom: 0
+}
+@keyframes animate {
+  from{
+    background-position: 0 0;
+  }to{
+    background-position: 100% 0;
+  }
+}
+  /*biografi*/
+.containerbiografi{
+  margin: 0;
+	padding: 20px;
+	display: flex;
+	justify-content: left;
+	height: 180px;
+	background-color: #fff;
+	align-items: center;
+	font-family: sans-serif;
+  background-color: darkslategray;
+}
+.headerbiografi{
+  margin: auto;
+  font-size: 60px;
+  color:honeydew;
+}
+.content{
+  margin-left: 17%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 1000px;
+  text-align: justify;
+  float: left;
+}
+.content h2{
+  margin-left: 30%;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: initial;
+}
+.content h2 p{
+  font-size: 20px;
+  font-weight: initial;
+  border-bottom: 3px solid black;
+  border-bottom-left-radius: 10px;
+}
+.jpg{
+  padding: 10px;
+  width: 300px;
+  height: 370px;
+  float:left;
+}
+
+/*profil*/
+.containerprofil{
+  margin: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: center;                                                 ;
+	height: 180px;
+	background-color: #fff;
+	align-items: center;
+	font-family: sans-serif;
+  background-color: darkslategray;
+}
+.drop-down-menu{
+  padding: 20px;
+  padding-top: 20px;
+}
+.drop-down-menu .headerprofil{
+  margin: auto;
+  font-size: 60px;
+  font-weight: bold;
+  color:honeydew;
+}
+.drop-down-menu ul li{
+  display: inline-block;
+  padding: 20px;
+  font-weight: bold;
+  padding-right: 5px;
+  text-align: center;
+}
+.drop-down-menu a{
+  text-decoration: none;
+  color: #e9e9e9;
+  transition: 0.4s;
+}
+.drop-down-menu a:hover{
+  text-align: center;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  color: #212b38;
+  border-radius: 10px;
+}
+.profil{
+  margin: auto;
+  margin-bottom: 20px;
+  width: 800px;
+  height: 800px;
+  padding: 20px;
+  background-position: center;
+  background-color: darkslategray;
+}
+.tabel{
+  margin: auto;
+  margin-top: 15%;
+}
+.tabel td{
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+  /*guestbook*/
+.containerguest{
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+  height: 180px;
+  background-color: #fff;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: darkslategray;
+}
+.headerguest{
+  font-size: 60px;
+  color:honeydew;
+}
+.dropdown-guest-menu ul li{
+  display: inline-block;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.dropdown-guest-menu a{
+  color: #e9e9e9;
+  text-decoration: none;
+}
+.dropdown-guest-menu a:hover{
+  text-align: center;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  color: #212b38;
+  border-radius: 10px;
+}
+.guestbook{
+   margin: 0;
+   margin-bottom: 20px;
+   padding: 0;
+   padding-top: 20px; 
+   width: 25%;
+   height: 65%;
+   text-align: center;
+   background-position: center;
+   background-color: darkslategray;
+   float: left;
+   border-right: 12px solid salmon;
+}
+.guestbook h2{
+   padding: 10px;
+   color: #e9e9e9;
+   font-family: sans-serif;
+}
+ .guest{
+   padding: 10px;
+}
+.guest input{
+   padding: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+}
+.guest input:hover[type='submit']{
+   background-color: olive;
+ }
+ .guest input:hover[type='reset']{
+   background-color: olive;
+ }
+ .guest textarea{
+   width: 80%;
+   height: 25%;
+ }
+ .contentguest{
+   margin: auto;
+   padding: 60px;
+   padding-left: 80px;
+   text-align: justify;
+   width: 60%;
+   float: left;
+ }
+ .contentguest h2, p{
+   padding: 10px;
+ }
+
+ /*SMA*/
+ .containerSMA{
+   margin: auto;
+ }
+ .containerSMA img{
+   margin: auto;
+   width: 100%;
+ }
+
+.containerlihat{
+  margin: auto;
+  padding: 20px;
+  width: 500px;
+}
+.lihat h1{
+  padding: 20px;
+  text-align: center;
+  background-color: #141d28;
+  color: #e9e9e9 ;
+}
+.lihat2 a{
+  padding: 10px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+
+
+ /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
